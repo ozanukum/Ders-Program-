@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html lang="tr"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ders Programı</title>
+
+<style> * { box-sizing: border-box; margin: 0; padding: 0; } html { width: 100%; overflow-x: hidden; } body { font-family: Arial, Helvetica, sans-serif; background: linear-gradient(135deg, #eef2f7, #dbe3ec); color: #1e293b; min-height: 100vh; padding: 40px 20px; overflow-x: hidden; } .container { width: 95%; max-width: 1250px; margin: auto; } /* BAŞLIK */ .header { background: white; padding: 25px; border-radius: 16px; text-align: center; margin-bottom: 25px; box-shadow: 0 8px 25px rgba(0,0,0,0.08); border-top: 5px solid #2563eb; } .header h1 { font-size: 30px; color: #1e293b; margin-bottom: 8px; } .header p { color: #64748b; font-size: 15px; font-weight: 700; } /* PROGRAM */ .program { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; } /* GÜN KARTI */ .day-card { background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 25px rgba(0,0,0,0.08); min-width: 0; } /* GÜN BAŞLIĞI */ .day-title { background: #1e3a8a; color: white; text-align: center; padding: 18px; font-size: 19px; font-weight: bold; } /* DERS */ .lesson { display: grid; grid-template-columns: 75px minmax(0, 1fr); align-items: center; min-height: 78px; padding: 10px 15px; border-bottom: 1px solid #e2e8f0; } .lesson:last-child { border-bottom: none; } .lesson:hover { background: #f8fafc; } /* SAAT */ .time { font-size: 16px; font-weight: bold; color: #475569; line-height: 1.4; white-space: nowrap; } /* DERS BİLGİSİ */ .lesson-info { padding-left: 12px; border-left: 2px solid #dbeafe; min-width: 0; } .lesson-number { font-size: 12px; color: #64748b; margin-bottom: 6px; font-weight: 600; } /* SINIF */ .class-name { display: inline-block; padding: 5px 10px; border-radius: 6px; font-size: 14px; font-weight: bold; white-space: nowrap; } /* SINIF RENKLERİ */ .class-5 { background: #dbeafe; color: #1d4ed8; } .class-6 { background: #dcfce7; color: #15803d; } .class-7 { background: #fef3c7; color: #b45309; } .class-8 { background: #fce7f3; color: #be185d; } /* ALT BİLGİ */ .footer { text-align: center; margin-top: 20px; color: #64748b; font-size: 13px; } /* TABLET */ @media (max-width: 900px) { body { padding: 25px 15px; } .container { width: 100%; } .program { grid-template-columns: 1fr; gap: 18px; } } /* TELEFON */ @media (max-width: 600px) { body { padding: 15px 8px; } .container { width: 100%; } .header { padding: 18px 12px; margin-bottom: 15px; border-radius: 12px; } .header h1 { font-size: 22px; margin-bottom: 6px; } .header p { font-size: 14px; } .program { display: flex; flex-direction: column; gap: 12px; } .day-card { width: 100%; border-radius: 12px; } .day-title { padding: 13px 10px; font-size: 17px; } .lesson { grid-template-columns: 82px minmax(0, 1fr); min-height: 68px; padding: 8px 10px; } .time { font-size: 15px; line-height: 1.35; } .lesson-info { padding-left: 10px; } .lesson-number { font-size: 12px; margin-bottom: 5px; } .class-name { padding: 5px 9px; font-size: 13px; } } /* ÇOK KÜÇÜK TELEFONLAR */ @media (max-width: 380px) { body { padding: 10px 5px; } .header { padding: 15px 8px; } .header h1 { font-size: 20px; } .header p { font-size: 13px; } .day-title { font-size: 16px; padding: 12px 8px; } .lesson { grid-template-columns: 75px minmax(0, 1fr); padding: 7px 8px; } .time { font-size: 14px; } .lesson-info { padding-left: 8px; } .lesson-number { font-size: 11px; } .class-name { font-size: 12px; padding: 4px 8px; } } </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- BAŞLIK -->
+
+<div class="header">
+    <h1>📚 DERS PROGRAMI</h1>
+    <p>Sosyal Bilgiler</p>
+</div>
+
+
+<!-- PROGRAM -->
+
+<div class="program">
+
+    <!-- PAZARTESİ -->
+
+    <div class="day-card">
+
+        <div class="day-title">
+            Pazartesi
+        </div>
+
+        <div class="lesson">
+            <div class="time">
+                14:00<br>14:40
+            </div>
+
+            <div class="lesson-info">
+                <div class="lesson-number">1. Ders</div>
+                <span class="class-name class-7">
+                    7. Sınıf
+                </span>
+            </div>
+        </div>
+
+        <div class="lesson">
+            <div class="time">
+                14:50<br>15:30
+            </div>
+
+            <div class="lesson-info">
+                <div class="lesson-number">2. Ders</div>
+                <span class="class-name class-7">
+                    7. Sınıf
+                </span>
+            </div>
+        </div>
+
+        <div class="lesson">
+            <div class="time">
+                15:40<br>16:20
+            </div>
+
+            <div class="lesson-info">
+                <div class="lesson-number">3. Ders</div>
+                <span class="class-name class-5">
+                    5. Sınıf
+                </span>
+            </div>
+        </div>
+
+        <div class="lesson">
+            <div class="time">
+                16:30<br>17:10
+            </div>
+
+            <div class="lesson-info">
+                <div class="lesson-number">4. Ders</div>
+                <span class="class-name class-5">
+                    5. Sınıf
+                </span>
+            </div>
+        </div>
+
+        <div class="lesson">
+            <div class="time">
+                17:20<br>18:00
+            </div>
+
+            <div class="lesson-info">
+                <div class="lesson-number">5. Ders</div>
+                <span class="class-name class-8">
+                    8. Sınıf
+                </span>
+            </div>
+        </div>
+
+        <div class="lesson">
+            <div class="time">
+                18:10<br>18:50
+            </div>
+
+            <div class="lesson-info">
+                <div class="lesson-number">6. Ders</div>
+                <span class="class-name class-8">
+                    8. Sınıf
+                </span>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- SALI -->
+
+    <div class="day-card">
+
+        <div class="day-title">
+            Salı
+        </div>
+
+        <div class="lesson">
+            <div class="time">
+                09:00<br>09:40
+            </div>
+
+            <div class="lesson-info">
+                <div class="lesson-number">1. Ders</div>
+                <span class="class-name class-6">
+                    6. Sınıf
+                </span>
+            </div>
+        </div>
+
+        <div class="lesson">
+            <div class="time">
+                09:50<br>10:30
+            </div>
+
+            <div class="lesson-info">
+                <div class="lesson-number">2. Ders</div>
+                <span class="class-name class-6">
+                    6. Sınıf
+                </span>
+            </div>
+        </div>
+
+        <div class="lesson">
+            <div class="time">
+                10:40<br>11:20
+            </div>
+
+            <div class="lesson-info">
+                <div class="lesson-number">3. Ders</div>
+                <span class="class-name class-5">
+                    5. Sınıf
+                </span>
+            </div>
+        </div>
+
+        <div class="lesson">
+            <div class="time">
+                11:30<br>12:10
+            </div>
+
+            <div class="lesson-info">
+                <div class="lesson-number">4. Ders</div>
+                <span class="class-name class-5">
+                    5. Sınıf
+                </span>
+            </div>
+        </div>
+
+        <div class="lesson">
+            <div class="time">
+                14:00<br>14:40
+            </div>
+
+            <div class="lesson-info">
+                <div class="lesson-number">5. Ders</div>
+                <span class="class-name class-8">
+                    8. Sınıf
+                </span>
+            </div>
+        </div>
+
+        <div class="lesson">
+            <div class="time">
+                14:50<br>15:30
+            </div>
+
+            <div class="lesson-info">
+                <div class="lesson-number">6. Ders</div>
+                <span class="class-name class-8">
+                    8. Sınıf
+                </span>
+            </div>
+        </div>
+
+        <div class="lesson">
+            <div class="time">
+                16:30<br>17:10
+            </div>
+
+            <div class="lesson-info">
+                <div class="lesson-number">7. Ders</div>
+                <span class="class-name class-7">
+                    7. Sınıf
+                </span>
+            </div>
+        </div>
+
+        <div class="lesson">
+            <div class="time">
+                17:20<br>18:00
+            </div>
+
+            <div class="lesson-info">
+                <div class="lesson-number">8. Ders</div>
+                <span class="class-name class-7">
+                    7. Sınıf
+                </span>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- ÇARŞAMBA -->
+
+    <div class="day-card">
+
+        <div class="day-title">
+            Çarşamba
+        </div>
+
+        <div class="lesson">
+            <div class="time">
+                15:40<br>16:20
+            </div>
+
+            <div class="lesson-info">
+                <div class="lesson-number">1. Ders</div>
+                <span class="class-name class-6">
+                    6. Sınıf
+                </span>
+            </div>
+        </div>
+
+        <div class="lesson">
+            <div class="time">
+                16:30<br>17:10
+            </div>
+
+            <div class="lesson-info">
+                <div class="lesson-number">2. Ders</div>
+                <span class="class-name class-6">
+                    6. Sınıf
+                </span>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+</body> </html>
